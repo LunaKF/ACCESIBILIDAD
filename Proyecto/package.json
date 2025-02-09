@@ -1,0 +1,20 @@
+{
+  "name": "accesibilidad",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "npx cssnano static/css/styles.css static/css/styles.min.css --config cssnano.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.0",
+    "stylelint": "^16.14.1",
+    "stylelint-config-standard": "^37.0.0"
+  },
+  "dependencies": {
+    "accesibilidad": "file:"
+  }
+}

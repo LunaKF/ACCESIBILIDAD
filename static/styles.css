@@ -1,0 +1,27 @@
+body{
+    background-color: #62438a;
+    align-content: center;
+    width: auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+}
+
+a {
+    padding: 20px 30px;
+    background-color: white;
+    color: #62438a;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  a:hover {
+    border: 1px white solid;
+    background-color: #3e2c55;
+    color: white;
+  }
+  
