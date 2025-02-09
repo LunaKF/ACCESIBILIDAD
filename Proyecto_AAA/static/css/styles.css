@@ -1,7 +1,7 @@
 :root {
-  --orange-color: #f56d4e;
-  --grey-color: #1f1f1f;
-  --white-color: #b6b6b6;
+  --orange-color: #9b1c00;
+  --grey-color: #000;
+  --white-color: #f3f3f3;
 
   font-size: 14px;
 }
@@ -14,6 +14,12 @@
 
 main {
   margin: 0;
+}
+
+a:focus{
+  font-weight: 900;
+  background-color: var(--grey-color);
+  color: white !important;
 }
 
 header {
@@ -49,7 +55,7 @@ header {
     align-items: center;
 
     label {
-      display: none;
+      cursor: pointer;
     }
   }
 
@@ -197,7 +203,13 @@ header {
   }
 
   button:hover {
-    background-color: #851f08;
+    background-color: #531406;
+    transform: scale(1.1);
+    border-radius: 10px;
+  }
+
+  button:focus {
+    background-color: #290a03;
     transform: scale(1.1);
     border-radius: 10px;
   }
@@ -228,7 +240,7 @@ header {
     color: var(--orange-color);
   }
 
-  h3 {
+  h2 {
     font-weight: 800;
     font-size: 20px;
     margin-bottom: 20px;
@@ -371,7 +383,7 @@ header {
   }
 
   .p {
-    color: #666;
+    color: var(--grey-color);
     line-height: 1.5;
   }
 
@@ -476,12 +488,12 @@ header {
 
     p {
       margin: 0;
-      color: gray;
+      color: var(--grey-color);
       width: 860px;
       padding-bottom: 20px;
     }
   }
-
+ 
   .categories {
     display: flex;
     justify-content: space-between;
@@ -513,8 +525,9 @@ header {
       font-weight: 900;
     }
 
-    h6 {
-      color: gray;
+    h2 {
+      font-size: 1rem;
+      color: var(--grey-color);
       margin-top: 15px;
     }
 
@@ -570,9 +583,10 @@ header {
       width: 400px;
     }
 
-    h6 {
-      color: gray;
+    h2 {
+      color: var(--grey-color);
       margin-top: 15px;
+      font-size: 1rem;
     }
 
     .product-list2-1 {
@@ -679,28 +693,29 @@ header {
 
   div {
     width: 30%;
-
+    
     input {
       margin-top: 50px;
       width: 75%;
-      padding: 20px;
+      padding: 22px;
       border: rgba(58, 58, 58, 0.171) 1px solid;
       border-inline-end: 0;
       margin-bottom: 20px;
     }
 
     /* animacion */
-    input:focus,
-    input:hover {
+    input:focus, input:hover {
       border-color: var(--orange-color);
       background-color: #f0f0f0;
-      transform: scale(1.05);
+    }
+
+    button:focus{
+      background-color:red;
     }
 
 
-
    span {
-      padding: 22px;
+      padding: 24px;
       color: white;
       background-color: var(--grey-color);
       width: 25%;
@@ -1361,7 +1376,7 @@ footer {
       width: auto;
       margin: 0 auto;
 
-      h6 {
+      h2 {
         font-size: 15px;
       }
 
@@ -1403,7 +1418,7 @@ footer {
       flex-direction: column;
       justify-content: center;
 
-      h6 {
+      h2 {
         font-size: 10px;
       }
 
@@ -1423,7 +1438,7 @@ footer {
       flex-direction: column;
       justify-content: center;
 
-      h6 {
+      h2 {
         font-size: 10px;
       }
 
@@ -1610,7 +1625,7 @@ footer {
       width: auto;
       margin: 0 auto;
 
-      h6 {
+      h2 {
         font-size: 15px;
       }
 
@@ -1652,7 +1667,7 @@ footer {
       flex-direction: column;
       justify-content: center;
 
-      h6 {
+      h2 {
         font-size: 10px;
       }
 
@@ -1672,7 +1687,7 @@ footer {
       flex-direction: column;
       justify-content: center;
 
-      h6 {
+      h2 {
         font-size: 10px;
       }
 
@@ -2062,7 +2077,7 @@ footer {
       width: auto;
       margin: 0 auto;
 
-      h6 {
+      h2 {
         font-size: 15px;
       }
 
@@ -2105,7 +2120,7 @@ footer {
       flex-direction: column;
       justify-content: center;
 
-      h6 {
+      h2 {
         font-size: 10px;
       }
 
@@ -2125,7 +2140,7 @@ footer {
       flex-direction: column;
       justify-content: center;
 
-      h6 {
+      h2 {
         font-size: 10px;
       }
 
@@ -2292,6 +2307,7 @@ footer {
   }
 }
 
+  /* SiteImprove */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -2304,5 +2320,5 @@ footer {
 }
 
 .skip-link:focus {
-  top: 0;   
+  top: 0;  
 }
